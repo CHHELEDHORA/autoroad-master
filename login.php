@@ -68,10 +68,10 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="registration.php" class="nav-link">Registration</a></li>
-	          <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
+	          <li class="nav-item active"><a href="login.php" class="nav-link">Login</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -83,8 +83,8 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
-          <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
-          	<div class="text">
+          <div class="col-lg-8 col-md-6 ftco-animate pb-5" style="margin-top: 21.5em;">
+          	<!-- <div class="text">
 	            <h1 class="mb-4">JE Campus <span>Education And </span> <span>You</span></h1>
 	            <p style="font-size: 18px;">"Education Must Not Simply Teach Work- It Must Teach Life."</p>
 	            <p href="#" class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
@@ -93,9 +93,11 @@
 		            	<span>W.E.B. Du Bois</span>
 	            	</div>
 	            </p>
-            </div>
+            </div> -->
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Login <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Login</h1>
           </div>
-          <div class="col-lg-2 col"></div>
+          <!-- <div class="col-lg-2 col"></div> -->
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
           	<form action="" method="post" class="request-form ftco-animate">
           		<h2>Login</h2>

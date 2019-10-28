@@ -30,14 +30,14 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">JE<span>CAMPUS</span></a>
+	      <a class="navbar-brand" href="index.php">JE<span>CAMPUS</span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="registration.php" class="nav-link">Registration</a></li>
 	          <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
@@ -52,9 +52,9 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
-          <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
+          <div class="col-lg-12 col-md-12 ftco-animate d-flex align-items-end">
           	<div class="text">
-	            <h1 class="mb-4">JE Campus <span>Education And </span> <span>You</span></h1>
+	            <h1 class="mb-4">JE Campus: <span>Education And </span> <span>You</span></h1>
 	            <p style="font-size: 18px;">"Education Must Not Simply Teach Work- It Must Teach Life."</p>
 	            <p href="#" class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
 	            	
@@ -64,36 +64,7 @@
 	            </p>
             </div>
           </div>
-          <div class="col-lg-2 col"></div>
-          <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-          	<form action="#" class="request-form ftco-animate">
-          		<h2>For Any Query...</h2>
-	    				<div class="form-group">
-	    					<label for="" class="label">Name</label>
-	    					<input type="text" class="form-control" placeholder="Your Name Here" required>
-	    				</div>
-	    				<div class="form-group">
-	    					<label for="" class="label">Email Id.</label>
-	    					<input type="Email" class="form-control" placeholder="Your Mail Id." required>
-	    				</div>
-	    				<div class="d-flex">
-	    					<div class="form-group mr-2">
-	                            <label for="" class="label">Contact Number</label>
-	                            <input type="text" class="form-control"  placeholder="Mobile Number" required>
-	                        </div>
-	                        <div class="form-group ml-2">
-	                            <label class="label">Class</label>
-	                            <input type="text" class="form-control"  placeholder="Ex:IX X XI XII or Other" required>
-	                        </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="label">Message</label>
-                            <input type="text" class="form-control" id="time_pick" placeholder="Message" required>
-                        </div>
-	                    <div class="form-group">
-	                        <input type="submit" value="Submit" class="btn btn-primary py-3 px-4">
-	                    </div>
-	    	</form>
+          </form>
           </div>
         </div>
       </div>
@@ -159,161 +130,6 @@
     </section>
 
     <section class="ftco-section">
-    	<div class="container-fluid px-4">
-    		<div class="row justify-content-center">
-          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-          	<span class="subheading">What we offer</span>
-            <h2 class="mb-2">Choose Your Car</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Audi</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Ford</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Cheverolet</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Mercedes</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-5.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Audi</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-6.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Ford</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-7.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Cheverolet</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-8.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-    						<span>Mercedes</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
     </section>
 
     <section class="ftco-section services-section img" style="background-image: url(images/bg2.jpg);">
@@ -322,7 +138,7 @@
     		<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
           	<span class="subheading">Work flow</span>
-            <h2 class="mb-3">How it works</h2>
+            <h2 class="mb-3">How we work</h2>
           </div>
         </div>
     		<div class="row">
@@ -330,8 +146,8 @@
             <div class="media block-6 services services-2">
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
-                <h3>Pick Destination</h3>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <h3>Unlimited Lessons</h3>
+                <p>Create unlimited lessons, quizes and courses with our awesome builder modules and elements.</p>
               </div>
             </div>      
           </div>
@@ -339,8 +155,8 @@
             <div class="media block-6 services services-2">
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-select"></span></div>
-                <h3>Select Term</h3>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <h3>Multi-User Courses</h3>
+                <p>We build beautiful responsive course listing pages, search forms and singular learning systems. </p>
               </div>
             </div>      
           </div>
@@ -348,8 +164,8 @@
             <div class="media block-6 services services-2">
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
-                <h3>Choose A Car</h3>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <h3>Pro Online Courses</h3>
+                <p>With our professional course pages, you can earn money from your online courses. Join us today!</p>
               </div>
             </div>      
           </div>
@@ -357,8 +173,8 @@
             <div class="media block-6 services services-2">
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-review"></span></div>
-                <h3>Enjoy The Ride</h3>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <h3>Team Quizzing</h3>
+                <p>Create and share outstanding quiz's, ask questions and get answer from your awesome clients!</p>
               </div>
             </div>      
           </div>
