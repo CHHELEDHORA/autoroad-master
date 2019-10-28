@@ -1657,6 +1657,9 @@ select.form-control:focus::-ms-value {
   padding-bottom: calc(0.25rem + 1px);
   font-size: 0.875rem;
   line-height: 1.5; }
+  .form-label-group.btnsubmit {
+    padding: 50px 0 0;
+}
 
 .form-control-plaintext {
   display: block;
@@ -7788,6 +7791,10 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important; }
+h5.text-center.subtitle {
+    /* padding: 0 !important; */
+    margin-top: -35px;
+}
 
 @media (min-width: 576px) {
   .text-sm-left {
@@ -8301,6 +8308,7 @@ h1, h2, h3, h4, h5,
       content: ''; }
 
 .request-form {
+  width : 100%;
   background: #fff;
   padding: 30px;
   -webkit-border-radius: 5px;
@@ -9018,7 +9026,14 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+ }
+ /* form .request-form .ftco-animate {
+  width: 100%;
+} */
+.ftco-footer .ftco-bg-dark .ftco-section .ftco-animate{
+  width: 40%;
+}
 
 .bg-primary {
   background: #fc983c !important; }
@@ -9043,6 +9058,10 @@ textarea.form-control {
 .ftco-section {
   padding: 6em 0;
   position: relative; }
+  section.ftco-section.contact-section {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
   @media (max-width: 767.98px) {
     .ftco-section {
       padding: 6em 0; } }
@@ -9057,9 +9076,9 @@ textarea.form-control {
   background: #3c312e; }
 
 .ftco-footer {
-  font-size: 16px;
+  font-size: 15px;
   background: #000;
-  padding: 7em 0; }
+  padding: 5em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }

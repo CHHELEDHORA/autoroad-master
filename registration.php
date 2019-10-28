@@ -1,38 +1,38 @@
 <?php
    include("dbconfig.php");
+if(isset($_POST['submit'])){
 
+  $name = mysqli_real_escape_string($db, $_POST['name']); 
 
-   $name1 = $_POST['name']; 
+  $father_name = mysqli_real_escape_string($db, $_POST['fname']);
 
-   $father_name1 = $_POST['father_name'];
+  $email = mysqli_real_escape_string($db, $_POST['email']);
 
-   $email1 = $_POST['email'];
+  $contact_number = mysqli_real_escape_string($db, $_POST['mobile']);
 
-   $contact_number1 = $_POST['contact_number'];
+  $address1 = mysqli_real_escape_string($db, $_POST['add1']);
 
-   $address11 = $_POST['address1'];
+   $address2 = mysqli_real_escape_string($db, $_POST['add2']);
 
-   $address21 = $_POST['address2'];
+   $near = mysqli_real_escape_string($db, $_POST['near']);
 
-   $near1 = $_POST['near'];
+   $landmark = mysqli_real_escape_string($db, $_POST['land']);
 
-   $landmark1 = $_POST['landmark'];
+   $po = mysqli_real_escape_string($db, $_POST['po']);
 
-   $po1 = $_POST['po'];
+   $ps = mysqli_real_escape_string($db, $_POST['ps']);
 
-   $ps1 = $_POST['ps'];
+   $dist = mysqli_real_escape_string($db, $_POST['dist']);
 
-   $dist1 = $_POST['dist'];
+   $pin = mysqli_real_escape_string($db, $_POST['pin']);
 
-   $pin1 = $_POST['pin'];
+   $alt_number = mysqli_real_escape_string($db, $_POST['altmobile']);
 
-   $alt_number1 = $_POST['alt_number'];
-
-   $class1 = $_POST['class'];
+   $class = mysqli_real_escape_string($db, $_POST['class']);
    
 
 
-   $sql="INSERT INTO registration (name,father_name,email,contact_number,address1,address2,near,landmark,po,ps,dist,pin,alt_number,class) VALUES ('$name1','$father_name1','$email1','$contact_number1','$address11','$address21','$near1','$landmark1','$po1','$ps1','$dist1','$pin1','$alt_number1','$class1')";
+   $sql="INSERT INTO registration (name,father_name,email,contact_number,address1,address2,near,landmark,po,ps,dist,pin,alt_number,class) VALUES ('$name','$father_name','$email','$contact_number','$address1','$address2','$near','$landmark','$po','$ps','$dist','$pin','$alt_number','$class')";
 
    if(!mysqli_query($db,$sql))
    {
@@ -40,8 +40,9 @@
    }
    else
    {
-      echo "Inserted Successfully";
-   }
+     // echo "Inserted Successfully";
+   }  
+  }
 ?>
 
 
@@ -120,79 +121,88 @@
         </div>
         <div class="row block-9 justify-content-center mb-5">
           <div class="col-md-8 mb-md-5">
-          	<h2 class="text-center">Fill up the form bellow <br>(* are mandatory)</h2>
+            <h2 class="text-center">Fill up the form below </h2>
+             <h5 class="text-center subtitle">(* are mandatory) </h5>
             <form class="form-signin" action="registration.php" method="post">
               <div class="form-label-group">
-                <label for="inputEmail">Name</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Name" name="name" required autofocus>
+                <label for="inputEmail">Full Name *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Full Name" name="name" required autofocus>
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Father's Name</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Father's Name" name="fname" required >
+                <label for="inputEmail">Father's Name *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Father's Name" name="fname" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Email ID</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email" name="email" required >
+                <label for="inputEmail">Email ID *</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Enter Email" name="email" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Contact Number.</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Contact Number" name="mobile" required >
+                <label for="inputEmail">Contact Number *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Contact Number" name="mobile" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Address Line 1</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Address" name="add1" required >
+                <label for="inputEmail">Address Line 1 *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Address" name="add1" required >
                 
               </div>
               <div class="form-label-group">
                 <label for="inputEmail">Address Line 2</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Address" name="add2" >
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Address" name="add2" >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Near</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Near" name="near" required >
+                <label for="inputEmail">Near </label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Near" name="near"  >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Landmark</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Landmark" name="land" required >
+                <label for="inputEmail">Landmark </label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Landmark" name="land"  >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">PO.</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="PO" name="po" required >
+                <label for="inputEmail">Post Office *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Post Office" name="po" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">PS.</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="PS" name="ps" required >
+                <label for="inputEmail">Police Station *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Police Station" name="ps" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">District</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="District" name="dist" required >
+                <label for="inputEmail">District *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter District" name="dist" required >
                  
               </div>
               <div class="form-label-group">
-                 <label for="inputEmail">PIN.</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="PIN" name="pin" required >
+                 <label for="inputEmail">Pin Code *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Pin Code" name="pin" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Alternate Contact Number</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Alternate Mobile Number" name="altmobile" required >
+                <label for="inputEmail">Alternate Contact Number *</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Enter Alternate Mobile Number" name="altmobile" required >
                 
               </div>
               <div class="form-label-group">
-                <label for="inputEmail">Class</label> 
-                <input type="text" id="inputEmail" class="form-control" placeholder="Class" name="class" required >
+                <label for="inputEmail">Class *</label> 
+                <!-- <input type="text" id="inputEmail" class="form-control" placeholder="Enter Class" name="class" required > -->
+                <select class="form-control" placeholder="Enter Class" name="class" required>
+  <option autofocus value="">Select Class</option>
+  <option value="IX">IX</option>
+  <option value="X">X</option>
+  <option value="XI">XI</option>  
+  <option value="XII">XII</option>
+  <option value="others">Others</option>
+</select>
               </div>
-              <div class="form-label-group">
-                <label for="inputEmail">...........................................................................................................................................................................................................................................................................</label> 
+              <div class="form-label-group btnsubmit">
+                
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="submit">Submit</button>
               </div>
               </div>
