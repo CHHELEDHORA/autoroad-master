@@ -278,7 +278,7 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
           	<span class="subheading">Blog</span>
-            <h2>Recent Blog</h2>
+            <h2>Why Us</h2>
           </div>
         </div>
         <div class="row d-flex">

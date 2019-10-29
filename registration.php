@@ -29,10 +29,12 @@ if(isset($_POST['submit'])){
    $alt_number = mysqli_real_escape_string($db, $_POST['altmobile']);
 
    $class = mysqli_real_escape_string($db, $_POST['class']);
+
+   $course = mysqli_real_escape_string($db, $_POST['course']);
    
 
 
-   $sql="INSERT INTO registration (name,father_name,email,contact_number,address1,address2,near,landmark,po,ps,dist,pin,alt_number,class) VALUES ('$name','$father_name','$email','$contact_number','$address1','$address2','$near','$landmark','$po','$ps','$dist','$pin','$alt_number','$class')";
+   $sql="INSERT INTO registration (name,father_name,email,contact_number,address1,address2,near,landmark,po,ps,dist,pin,alt_number,class,course) VALUES ('$name','$father_name','$email','$contact_number','$address1','$address2','$near','$landmark','$po','$ps','$dist','$pin','$alt_number','$class','$course')";
 
    if(!mysqli_query($db,$sql))
    {
@@ -193,13 +195,24 @@ if(isset($_POST['submit'])){
                 <label for="inputEmail">Class *</label> 
                 <!-- <input type="text" id="inputEmail" class="form-control" placeholder="Enter Class" name="class" required > -->
                 <select class="form-control" placeholder="Enter Class" name="class" required>
-  <option autofocus value="">Select Class</option>
-  <option value="IX">IX</option>
-  <option value="X">X</option>
-  <option value="XI">XI</option>  
-  <option value="XII">XII</option>
-  <option value="others">Others</option>
-</select>
+                  <option autofocus value="">Select Class</option>
+                  <option value="IX">IX</option>
+                  <option value="X">X</option>
+                  <option value="XI">XI</option>  
+                  <option value="XII">XII</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <div class="form-label-group">
+                <label for="inputEmail">Course *</label> 
+                <!-- <input type="text" id="inputEmail" class="form-control" placeholder="Enter Class" name="class" required > -->
+                <select class="form-control" placeholder="Enter Class" name="course" required>
+                  <option autofocus value="">Select Course</option>
+                  <option value="NEET">NEET</option>
+                  <option value="JEE MAIN">JEE MAIN</option>
+                  <option value="JEE ADVANCE">JEE ADVANCE</option>  
+                  <option value="WBJEEI">WBJEE</option>
+                </select>
               </div>
               <div class="form-label-group btnsubmit">
                 
